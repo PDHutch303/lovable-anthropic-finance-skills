@@ -1,63 +1,50 @@
-# Lovable Accounting, CPA, Family Office & CFO Skill Library
+# Lovable Accounting, CFO, Tax, Family Office & Industry Finance Skills
 
-A professional-finance skill library for Lovable covering bookkeeping, accounting close, controller/CPA review, FP&A/CFO work, financial modeling, tax readiness and review, audit support, family-office/private-investment administration, private equity/acquisitions, and industry-specific accounting.
+This repository is the **source library** for a professional-finance skill suite covering bookkeeping, close, controller/CPA work, FP&A/CFO analysis, financial modeling, tax/audit support, family office/private equity, acquisitions and industry accounting.
 
-## Lovable import
+## Important: do not import `main` into Lovable
 
-Use the repository root:
+The complete source library is intentionally larger than Lovable's per-skill file limit. Import the five purpose-built `lovable-*` branches separately instead. Each branch has its own root `SKILL.md`, shared quality controls and only the specialist playbooks relevant to that skill.
 
-`https://github.com/PDHutch303/lovable-anthropic-finance-skills`
+## Lovable packs
 
-The root skill is `accounting-cfo`. Bundled specialist playbooks support the master router.
+### 1. Accounting & Close
+Branch: `lovable-accounting-close`
+
+Use for bookkeeping, onboarding, transaction processing, bank/balance-sheet reconciliations, AP/AR, billing, payroll, inventory/COGS, journal entries, month-end close, controller review, financial statements, multi-entity/intercompany/consolidation, technical accounting and QBO/Xero/Stripe workflows.
+
+### 2. CFO, FP&A, Modeling & M&A
+Branch: `lovable-cfo-fpa-ma`
+
+Use for budgeting, forecasting, cash planning, profitability, board reporting, debt/covenants, treasury, valuation, three-statement models, model audit/debugging, M&A, LBOs, quality of earnings, investment-committee memos, purchase accounting and post-close finance integration.
+
+### 3. Tax & Audit Support
+Branch: `lovable-tax-audit`
+
+Use for tax workpapers/return review, 1040/1065/1120-S/1120 readiness, basis/K-1 tracking, estimated tax, SALT/sales tax, payroll tax, tax notices/provision, audit planning/support/testing, sampling, fraud/going concern and SOX/internal controls.
+
+### 4. Family Office & Private Equity
+Branch: `lovable-family-office-pe`
+
+Use for consolidated family-office reporting, private-investment/fund accounting, NAV reconciliation, capital calls/distributions, basis/K-1/unfunded commitments, IRR/MOIC, waterfalls/carry, custody aggregation, trusts/estates, philanthropy, portfolio reporting and wealth-planning support.
+
+### 5. Industry Accounting & Operating Finance
+Branch: `lovable-industry-accounting`
+
+Use for manufacturing, construction/field service and medical/aesthetic practices: standard/actual costing, WIP, inventory, job/product/procedure profitability, labor/fleet/branch economics, backlog, capacity, provider economics and industry cash-flow drivers.
+
+## ZIP import
+
+For any branch, select that branch on GitHub and choose **Code → Download ZIP**. Upload that ZIP in Lovable under **Settings → Skills → Import skill → Upload ZIP**. Each archive contains one wrapping repository folder with a root `SKILL.md` inside it.
+
+Import all five packs if you want the full finance operating system. Lovable can then select the relevant skill based on each skill's trigger description instead of loading one oversized general-purpose bundle.
 
 ## Quality architecture
 
-This repository intentionally separates **breadth** from **control quality**:
+Every pack inherits `QUALITY-STANDARD.md`, which requires entity/period/basis discipline, provenance, tie-outs, missing-data handling, materiality, exception tracking, approval boundaries, current-authority verification and review-ready deliverables.
 
-- `SKILL.md` routes finance work.
-- `QUALITY-STANDARD.md` defines provenance, scope, tie-outs, exceptions, materiality, approval boundaries, current-authority requirements and review-ready output.
-- `EVALS.md` provides adversarial scenarios and a scoring rubric so skill quality can be tested against a no-skill baseline.
-- High-consequence workflows contain deeper procedures, reconciliation identities, failure rules, evidence standards and review gates.
-- Smaller specialty skills add domain logic and inherit the master quality standard.
-
-## Coverage
-
-### Bookkeeping & close
-Onboarding, COA, receipt/invoice extraction, categorization, bank and balance-sheet reconciliation, journal entries, payroll, fixed assets, inventory/COGS, cleanup/catch-up, close management and controller review.
-
-### AP / AR / billing
-AP, purchasing, invoice aging, payments, collections/dunning, contract-to-invoice, usage billing, expense management and processor reconciliation.
-
-### Controller / CPA / reporting
-Financial statements, variance analysis, board reporting, dashboards, multi-entity/intercompany/consolidation, revenue, leases, related parties, technical accounting, accounting policies and disclosures.
-
-### FP&A / CFO / modeling / transactions
-Budgeting, rolling forecasts, 13-week and longer cash forecasts, integrated three-statement modeling, financial-model audit/debugging, working capital, profitability, concentration, debt/covenants, treasury, valuation, capital allocation/structure, M&A, LBO modeling, QoE, investment-committee memos and post-close analysis.
-
-### Family office / private equity / planning
-Entity maps, consolidated family-office reporting, private investment roll-forwards, fund NAV reconciliation/break tracing, capital calls/distributions, basis/K-1 reconciliation, unfunded commitments, IRR/MOIC and fund metrics, waterfalls/carry, liquidity, trusts/estates, philanthropy, portfolio reporting, wealth diagnostics and succession planning support.
-
-### Tax / audit support
-Tax workpapers, return review, entity/individual return readiness, estimated tax, SALT/sales tax, payroll tax, provision/notice support, audit planning/testing/analytics, fraud/going-concern/SOX support. Material positions require current authoritative guidance and qualified professional review.
-
-### Industry packs
-Family office/private equity/trusts, manufacturing, blue-collar service/construction, plastic surgery/medical/aesthetic practices, and acquisitions/post-close integration. See `INDUSTRIES.md`.
-
-## Best-of-breed benchmark sources
-
-The workflows are original/adapted procedures informed by strong public finance-agent and accounting resources, including:
-
-- Anthropic Knowledge Work Plugins — close, reconciliation, statements, variance and audit-support workflows
-- Anthropic Financial Services — financial modeling (DCF/LBO/3-statement/model audit), private equity, fund administration, wealth management and investment-committee workflows
-- Receiptor-AI bookkeeping skills
-- OpenAccountant skills
-- OpenAccountants tax/accounting resources
-- Xero official prompt library
-- Stripe AI resources
-- CaseMark skills
-
-This repository does not copy large upstream skill files verbatim. The goal is a Lovable-oriented operating system that emphasizes evidence, reproducibility, controls, model integrity and professional review.
+The source library also maintains `EVALS.md` for adversarial quality testing and `INDUSTRIES.md` / `INTEGRATIONS.md` for specialized operating guidance.
 
 ## Design rule
 
-More skills are not automatically better. Add or deepen a skill when it changes behavior materially, clarifies a trigger, adds domain-specific controls, or improves a recurring deliverable. Prefer evidence-tested workflows over a directory of shallow prompts.
+More skills are not automatically better. Add or deepen a playbook only when it materially changes behavior, introduces domain-specific controls, clarifies a trigger or improves a recurring deliverable.
