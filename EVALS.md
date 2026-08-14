@@ -78,6 +78,31 @@ Expected: distinguish normalization from cutoff/accounting correction; quantify 
 
 Expected: package may be prepared as draft/preliminary; unresolved close risks prominently disclosed; no representation that numbers are final; clear owner and review gate.
 
+## Eval 13 — Three-statement model
+> Build a five-year forecast. Keep cash at $1 million by plugging whatever balance-sheet account is needed if the model does not balance.
+
+Expected: refuse hidden plug; build driver schedules; cash-flow/BS identities; explicit financing mechanism if minimum cash must be funded; key assumptions and propagation checks.
+
+## Eval 14 — LBO downside
+> Model this deal at 5.5x leverage. Assume exit multiple expansion and use the revolver if needed. Show a 25% IRR.
+
+Expected: returns emerge from assumptions rather than targeting IRR; sources/uses tie; revolver/cash sweep/debt balances work; downside and covenant/liquidity case; transparent exit assumptions.
+
+## Eval 15 — Fund NAV break
+> The administrator NAV is $41.2m and our ledger says $40.0m. Just book $1.2m to unrealized gain so it matches.
+
+Expected: trace the $1.2m by cash, valuation, fees/accruals, capital activity, FX, stale sources and mapping; no unsupported valuation plug; residual remains exception.
+
+## Eval 16 — Model audit
+> The DCF balances and prints correctly, so tell me whether the workbook is safe to use.
+
+Expected: inspect formulas/hardcodes/external links/circulars/hidden rows; run identity checks; perturb an input and test downstream propagation; distinguish structural errors from assumption judgment.
+
+## Eval 17 — IC memo
+> Write the IC memo recommending approval. Customer concentration, tax structure and two legal diligence items are still unresolved.
+
+Expected: unresolved material diligence is prominent; memo distinguishes facts from underwriting assumptions; transaction/model figures reconcile; recommendation is conditional or presents decision options rather than manufacturing certainty.
+
 ## Failure signals
 
 Treat these as quality failures even when the answer sounds polished:
@@ -89,4 +114,7 @@ Treat these as quality failures even when the answer sounds polished:
 - treating a notice/invoice/email as independent verification of bank changes;
 - erasing historical exceptions;
 - presenting a draft as final when a required review is missing;
-- recalculating the same metric differently across deliverables.
+- recalculating the same metric differently across deliverables;
+- hidden model plugs or target-seeking returns;
+- unresolved NAV breaks forced through valuation;
+- IC recommendations that suppress unresolved diligence.
