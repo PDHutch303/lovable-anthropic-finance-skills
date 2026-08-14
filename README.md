@@ -1,28 +1,77 @@
-# Lovable Anthropic Finance Skills
+# Lovable Accounting & Finance Skills
 
-A lightweight, Lovable-friendly finance skill pack adapted from the finance concepts in Anthropic's `knowledge-work-plugins` repository.
-
-Source project: https://github.com/anthropics/knowledge-work-plugins
-
-## Included skills
-
-- `audit-support` — audit planning, sampling, control testing, deficiency documentation
-- `close-management` — month-end close sequencing, dependencies, blockers, status tracking
-- `financial-statements` — P&L, balance sheet, cash flow, comparative reporting
-- `journal-entry-prep` — supporting schedules, entry construction, review checks
-- `journal-entry` — debit/credit logic, posting support, documentation
-- `reconciliation` — bank, balance sheet, subledger and intercompany reconciliation
-- `sox-testing` — control design and operating-effectiveness testing
-- `variance-analysis` — budget/actual and period-over-period variance analysis
+A lightweight, Lovable-friendly accounting/CFO skill pack curated from the public finance, bookkeeping, and accounting skill libraries we reviewed. The files here are condensed, Lovable-oriented adaptations rather than mirrors of the upstream repositories.
 
 ## Lovable
 
-Use the repository root URL in Lovable:
+Use this repository root URL in Lovable:
 
 `https://github.com/PDHutch303/lovable-anthropic-finance-skills`
 
-This repository intentionally contains only a small set of finance `SKILL.md` files so Lovable does not need to download Anthropic's full monorepo.
+The repository is intentionally small so Lovable can download it without pulling large monorepos.
 
-## Attribution
+## Included skills
 
-The skill topics and workflow concepts are based on Anthropic's public finance plugin materials. These files are condensed, Lovable-oriented adaptations rather than a mirror of the full Anthropic repository.
+### Core bookkeeping and close
+- `bank-reconciliation`
+- `expense-categorization`
+- `receipt-processing`
+- `close-management`
+- `reconciliation`
+- `journal-entry-prep`
+- `journal-entry`
+- `financial-statements`
+- `variance-analysis`
+
+### Fixed assets, inventory, payroll, and tax readiness
+- `depreciation-assets`
+- `inventory-cogs`
+- `payroll-reconciliation`
+- `contractor-1099`
+- `sales-tax-nexus`
+- `tax-prep`
+
+### AP, AR, and payments
+- `accounts-payable`
+- `invoice-aging`
+- `payment-reconciliation`
+- `ar-collections`
+- `stripe-reconciliation`
+
+### Multi-entity / controller
+- `multi-entity`
+- `intercompany-reconciliation`
+- `consolidation`
+- `sox-testing`
+- `audit-support`
+
+### CFO / FP&A / diligence
+- `cash-flow-forecast`
+- `working-capital`
+- `board-reporting`
+- `quality-of-earnings`
+
+### Specialized accounting
+- `revenue-recognition`
+- `lease-accounting-asc842`
+
+### Accounting systems
+- `quickbooks-online`
+- `xero-integration`
+
+## Source inspiration / attribution
+
+These condensed skills were curated from concepts and workflows found in public repositories we reviewed, including:
+
+- Anthropic Knowledge Work Plugins: `https://github.com/anthropics/knowledge-work-plugins`
+- Receiptor-AI Bookkeeping Skills: `https://github.com/Receiptor-AI/bookkeeping-skills`
+- OpenAccountant Skills: `https://github.com/openaccountant/skills`
+- Finance Skills: `https://github.com/harshith-vaddiparthy/finance-skills`
+- Wyre Technology MSP Claude Plugins / QuickBooks: `https://github.com/wyre-technology/msp-claude-plugins`
+- Xero Prompt Library: `https://github.com/XeroAPI/xero-prompt-library`
+- Stripe AI: `https://github.com/stripe/ai`
+- OpenAccountants: `https://github.com/openaccountants/openaccountants`
+- CaseMark Skills: `https://github.com/CaseMark/skills`
+- Open Org: `https://github.com/aviskaar/open-org`
+
+The goal is a practical, non-duplicative accounting library that Lovable can import efficiently. For tax, legal, audit, and technical GAAP conclusions, workflows should still route material judgments to qualified professional review.
