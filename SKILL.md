@@ -1,11 +1,11 @@
 ---
 name: accounting-cfo
-description: Use for bookkeeping, accounting, CPA/controller work, tax readiness and planning support, audit support, family-office administration, financial planning, FP&A, financial advisory analysis, multi-entity reporting, and CFO decision support.
+description: Use for bookkeeping, accounting, CPA/controller work, tax readiness and planning support, audit support, family-office administration, financial planning, FP&A, financial advisory analysis, multi-entity reporting, industry-specific accounting, and CFO decision support.
 ---
 
 # Accounting, CPA, Tax, Audit, Family Office & Financial Advisory
 
-Use this as the master professional-finance operating skill. Route each request to the most relevant bundled playbook and combine playbooks only when the work genuinely spans functions.
+Use this as the master professional-finance operating skill. Route each request to the most relevant bundled playbook and combine playbooks when the work genuinely spans functions or industries.
 
 ## Core principles
 1. Preserve accounting integrity: debits equal credits, reconciliations tie, and material adjustments require support.
@@ -100,46 +100,40 @@ Use this as the master professional-finance operating skill. Route each request 
 - `personal-financial-statement/SKILL.md` — principal/guarantor financial statements
 - `succession-planning-finance/SKILL.md` — ownership succession financial modeling
 
-### Family office
-- `family-office-reporting/SKILL.md` — consolidated family-office reporting/NAV
+### Family office — core
+- `family-office-reporting/SKILL.md` — consolidated reporting/NAV
 - `private-investment-tracking/SKILL.md` — private/fund investment roll-forwards
 - `capital-calls-distributions/SKILL.md` — commitments, calls, distributions
-- `capital-call-distribution-parser/SKILL.md` — parse notices, verify commitment roll-forward, controlled payment memo
+- `capital-call-distribution-parser/SKILL.md` — parse notices and controlled payment memo
 - `family-office-liquidity/SKILL.md` — taxes, debt, calls, reserves, cash planning
 - `entity-structure-mapping/SKILL.md` — entity/ownership/tax map
-- `family-council-minutes/SKILL.md` — factual family governance meeting minutes and decision log
+- `family-council-minutes/SKILL.md` — governance meeting minutes and decision log
 - `philanthropic-planning/SKILL.md` — DAF/foundation/giving administration
 - `estate-trust-coordination/SKILL.md` — trust/estate financial administration
 
 ### Tax & CPA tax work
-- `tax-prep/SKILL.md`
-- `tax-workpapers/SKILL.md`
-- `tax-return-review/SKILL.md`
-- `individual-tax-1040/SKILL.md`
-- `partnership-tax-1065/SKILL.md`
-- `s-corp-tax-1120s/SKILL.md`
-- `c-corp-tax-1120/SKILL.md`
-- `contractor-1099/SKILL.md`
-- `basis-k1-tracking/SKILL.md`
-- `estimated-tax-planning/SKILL.md`
-- `entity-tax-analysis/SKILL.md`
-- `state-local-tax/SKILL.md`
-- `sales-tax-nexus/SKILL.md`
-- `payroll-tax/SKILL.md`
-- `tax-provision/SKILL.md`
-- `tax-notice-response/SKILL.md`
-- `openaccountants-tax-lookup/SKILL.md` — use configured OpenAccountants tax MCP when actually connected
+Use the bundled tax playbooks including `tax-prep`, `tax-workpapers`, `tax-return-review`, `individual-tax-1040`, `partnership-tax-1065`, `s-corp-tax-1120s`, `c-corp-tax-1120`, `contractor-1099`, `basis-k1-tracking`, `estimated-tax-planning`, `entity-tax-analysis`, `state-local-tax`, `sales-tax-nexus`, `payroll-tax`, `tax-provision`, `tax-notice-response`, and `openaccountants-tax-lookup`.
 
 ### Audit, assurance & controls
-- `audit-planning/SKILL.md`
-- `audit-risk-assessment/SKILL.md`
-- `audit-support/SKILL.md`
-- `substantive-testing/SKILL.md`
-- `analytical-procedures/SKILL.md`
-- `audit-sampling/SKILL.md`
-- `fraud-risk/SKILL.md`
-- `going-concern/SKILL.md`
-- `sox-testing/SKILL.md`
+Use `audit-planning`, `audit-risk-assessment`, `audit-support`, `substantive-testing`, `analytical-procedures`, `audit-sampling`, `fraud-risk`, `going-concern`, and `sox-testing` as applicable.
+
+## Industry-specific router
+Read `INDUSTRIES.md` whenever the request involves a family office/private investment, manufacturer, field-service or construction company, medical/plastic-surgery practice, or acquisition/portfolio company. Combine the industry playbooks with the generic accounting workflow rather than replacing core accounting controls.
+
+### Family office / private equity / trusts & estates
+Use `family-office-pe-investment-accounting`, `fund-investment-rollforward`, `capital-account-tracking`, `partnership-waterfalls`, `preferred-return-waterfalls`, `carried-interest-analysis`, `investment-basis-tracking`, `k1-investment-reconciliation`, `unfunded-commitment-tracking`, `investment-performance-irr-moic`, `portfolio-company-reporting`, `family-office-consolidation`, `family-office-cash-forecasting`, `trust-accounting`, `trust-distribution-tracking`, `estate-administration-accounting`, `beneficiary-reporting`, and `gift-estate-tax-readiness`.
+
+### Manufacturing
+Use `manufacturing-cost-accounting`, `standard-costing`, `actual-vs-standard-cost`, `purchase-price-variance`, `material-usage-variance`, `labor-efficiency-variance`, `overhead-absorption`, `bom-costing`, `work-order-costing`, `wip-reconciliation`, `finished-goods-reconciliation`, `inventory-reserve-obsolescence`, `scrap-yield-analysis`, `capacity-utilization`, `machine-hour-costing`, `make-vs-buy`, `product-sku-profitability`, `landed-cost`, and `cycle-count-inventory-controls`.
+
+### Blue-collar service / construction
+Use `job-profitability`, `service-line-profitability`, `technician-profitability`, `labor-utilization`, `labor-burden`, `construction-job-costing`, `construction-wip-accounting`, `contract-assets-liabilities`, `backlog-analysis`, `service-agreement-recurring-revenue`, `fleet-truck-costing`, `truck-stock-inventory`, `dispatch-kpi-analysis`, `callback-warranty-costing`, `customer-acquisition-payback`, `branch-location-profitability`, `overtime-analysis`, `field-service-cash-conversion`, and `13-week-cash-flow-service-company`.
+
+### Plastic surgery / medical / aesthetic practice
+Use `medical-practice-accounting`, `procedure-profitability`, `provider-productivity`, `provider-compensation`, `patient-deposit-deferred-revenue`, `merchant-financing-reconciliation-medical`, `refund-credit-balance-review`, `medical-supply-implant-inventory`, `operating-room-profitability`, `medical-marketing-roi`, `payor-selfpay-mix-analysis`, and `practice-cash-flow-forecast`.
+
+### Acquisitions / post-close
+Use `purchase-price-allocation`, `opening-balance-sheet`, `working-capital-true-up`, `seller-note-accounting`, `earnout-accounting`, `transaction-cost-accounting`, `goodwill-intangibles`, `post-close-integration`, `100-day-finance-plan`, `acquisition-synergy-tracking`, `sources-and-uses`, and `rollover-equity`.
 
 ### Systems & integrations
 - `quickbooks-online/SKILL.md`
@@ -154,7 +148,7 @@ When applicable provide:
 3. Analysis and assumptions.
 4. Recommended treatment or decision options.
 5. Journal entries, schedules, or calculations.
-6. Financial-statement, cash, tax, ownership, portfolio, or covenant impact.
+6. Financial-statement, cash, tax, ownership, portfolio, operating-KPI, or covenant impact.
 7. Required professional review or authoritative-source check.
 8. Next actions, owners, and deadlines.
 
@@ -166,8 +160,9 @@ When applicable provide:
 - Do not describe audit-support work as an independent audit opinion.
 - Do not characterize family-office economic consolidation as changing legal ownership.
 - Do not treat a capital-call notice or invoice as independent verification of new or changed wire instructions.
+- Do not use financial productivity metrics as clinical-quality judgments or as the sole basis for employment decisions.
 - Financial-advisory workflows may support planning, reporting, underwriting, scenario analysis, and comparison with an approved IPS, but should not present guaranteed returns or unqualified individualized securities recommendations.
 - Tax, legal, audit, estate/trust, insurance, and consequential technical-accounting conclusions should identify the qualified-professional review point.
 
 ## Final quality check
-Confirm entity and period; debits equal credits; roll-forwards work; cash/subledger balances tie or exceptions are listed; intercompany entries mirror; assumptions are labeled; source documents are identified; material risks are visible; integration access is verified before use; and recommendations are operationally clear.
+Confirm entity and period; debits equal credits; roll-forwards work; cash/subledger balances tie or exceptions are listed; intercompany entries mirror; assumptions are labeled; source documents are identified; material risks are visible; integration access is verified before use; industry-specific KPIs reconcile to financial data where possible; and recommendations are operationally clear.
