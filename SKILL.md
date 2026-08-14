@@ -1,127 +1,57 @@
 ---
 name: accounting-cfo
-description: Use for bookkeeping, accounting, CPA/controller work, tax readiness and planning support, audit support, family-office administration, financial planning, FP&A, financial advisory analysis, multi-entity reporting, industry-specific accounting, and CFO decision support.
+description: Use when performing bookkeeping, accounting, controller/CPA review, financial close, tax readiness/review, audit support, family-office administration, FP&A, financial advisory analysis, industry-specific accounting, multi-entity reporting, or CFO decision-support work. Not for app/software development unrelated to finance.
 ---
 
-# Accounting, CPA, Tax, Audit, Family Office & Financial Advisory
+# Accounting, CPA, Family Office & CFO Operating Skill
 
-Use this as the master professional-finance operating skill. Route each request to the most relevant bundled playbook and combine playbooks when the work genuinely spans functions or industries.
+Use this as the master finance router. For any material or review-facing task, apply `QUALITY-STANDARD.md` before the specialty workflow. Use `EVALS.md` to test and improve skill behavior.
 
-## Core principles
-1. Preserve accounting integrity: debits equal credits, reconciliations tie, and material adjustments require support.
-2. Separate facts, estimates, assumptions, and professional judgments.
-3. Preserve entity, trust, fund, and owner boundaries even in consolidated economic reporting.
-4. Prefer source records and reconciled schedules over summaries when they conflict.
-5. Never force unresolved differences merely to make a schedule balance.
-6. Distinguish bookkeeping, GAAP/accounting analysis, management reporting, tax analysis, audit support, legal conclusions, insurance advice, and investment advice.
-7. Show assumptions, evidence, financial impact, and the professional-review point for material conclusions.
-8. Use current authoritative sources when tax law, accounting standards, audit standards, regulations, rates, thresholds, or filing requirements matter.
-9. Preserve historical actuals; forecasts and scenarios do not overwrite closed-period records.
-10. For related parties and multi-entity activity, determine economic substance before selecting accounting treatment.
+## Operating order
 
-## Workflow router
+For complex work, use this order unless the task clearly requires less:
+1. **Scope:** entity, period, basis, currency, data-as-of/closed-through and materiality.
+2. **Source:** identify the authoritative/source set and avoid duplicate pulls.
+3. **Prove:** reconcile/tie-out the relevant balances or roll-forwards.
+4. **Analyze:** use the appropriate accounting, tax, family-office, industry or advisory workflow.
+5. **Exceptions:** surface unresolved differences and missing evidence.
+6. **Review:** identify approvals and qualified-professional review points.
+7. **Deliver:** make the conclusion reproducible and operational.
 
-### Bookkeeping & onboarding
-- `client-onboarding-intake/SKILL.md` — full new-client/entity accounting intake
-- `client-intake-context-profiler/SKILL.md` — recurring client rules and context profile
-- `bookkeeping-setup/SKILL.md` — new-book setup and architecture
-- `chart-of-accounts/SKILL.md` — COA design, cleanup, and mapping
-- `receipt-invoice-extractor/SKILL.md` — structured extraction from receipts and invoices
-- `receipt-processing/SKILL.md` — receipt/source-document processing
-- `uncategorized-transaction-chaser/SKILL.md` — unresolved transaction client-question queue
-- `bank-reconciliation/SKILL.md` — bank/credit-card reconciliation
-- `expense-categorization/SKILL.md` — transaction coding
-- `cleanup-catchup-bookkeeping/SKILL.md` — historical cleanup and catch-up
-- `accruals-prepaids/SKILL.md` — accruals, prepaids, amortization
-- `close-management/SKILL.md` — month-end close sequencing
-- `journal-entry-prep/SKILL.md` — supported JE preparation
-- `journal-entry/SKILL.md` — debit/credit construction
-- `reconciliation/SKILL.md` — GL/subledger/balance-sheet reconciliation
-- `depreciation-assets/SKILL.md` — fixed assets and depreciation
-- `inventory-cogs/SKILL.md` — inventory and COGS
-- `payroll-reconciliation/SKILL.md` — payroll-to-GL reconciliation
+## Core workflow router
 
-### Billing, AP, AR & spending
-- `contract-to-invoice/SKILL.md` — validate invoices to contracts/SOWs/rate sheets
-- `usage-billing-review/SKILL.md` — usage/metered billing QA
-- `accounts-payable/SKILL.md` — AP review and payment readiness
-- `invoice-aging/SKILL.md` — AR aging and prioritization
-- `payment-reconciliation/SKILL.md` — payment/cash matching
-- `ar-collections/SKILL.md` — collections workflow
-- `ar-dunning/SKILL.md` — structured customer dunning
-- `purchase-order-management/SKILL.md` — purchase orders and commitments
-- `expense-management/SKILL.md` — card/employee spend controls
-- `stripe-reconciliation/SKILL.md` — processor settlement and fee reconciliation
+### Bookkeeping, source records & close
+Use `client-onboarding-intake`, `client-intake-context-profiler`, `bookkeeping-setup`, `chart-of-accounts`, `receipt-invoice-extractor`, `receipt-processing`, `uncategorized-transaction-chaser`, `expense-categorization`, `bank-reconciliation`, `reconciliation`, `cleanup-catchup-bookkeeping`, `accruals-prepaids`, `journal-entry-prep`, `journal-entry`, `payroll-reconciliation`, `inventory-cogs`, `depreciation-assets`, `close-management`, and `controller-review`.
 
-### Controller, CPA & financial reporting
-- `controller-review/SKILL.md` — controller-level monthly review
-- `financial-statements/SKILL.md` — P&L, balance sheet, cash flow
-- `variance-analysis/SKILL.md` — budget/actual and period-over-period analysis
-- `board-reporting/SKILL.md` — board and management reporting
-- `management-dashboard/SKILL.md` — KPI scorecards
-- `technical-accounting-research/SKILL.md` — structured GAAP research
-- `accounting-policy-memo/SKILL.md` — accounting policies and memos
-- `gaap-disclosure-review/SKILL.md` — financial-statement disclosure review
-- `revenue-recognition/SKILL.md` — revenue recognition
-- `lease-accounting-asc842/SKILL.md` — ASC 842 leases
-- `multi-entity-accounting/SKILL.md` — multi-entity accounting
-- `intercompany-reconciliation/SKILL.md` — intercompany matching
-- `consolidation/SKILL.md` — consolidated reporting and eliminations
-- `business-combinations/SKILL.md` — acquisition accounting support
+For close work, evidence and tie-outs outrank checklist status. Never use a generic balancing plug to finish a close.
 
-### FP&A, advisory & corporate finance
-- `strategic-finance/SKILL.md` — long-range strategic finance
-- `budgeting/SKILL.md` — annual/department budgets
-- `financial-forecasting/SKILL.md` — rolling forecasts
-- `scenario-planning/SKILL.md` — base/upside/downside scenarios
-- `cash-flow-forecast/SKILL.md` — short- and medium-term cash forecasting
-- `working-capital/SKILL.md` — AR/AP/inventory and cash conversion
-- `profitability-analysis/SKILL.md` — product/service/location profitability
-- `client-profitability/SKILL.md` — customer economics and pricing
-- `revenue-concentration/SKILL.md` — concentration risk
-- `runway-analysis/SKILL.md` — burn and runway
-- `debt-covenant-analysis/SKILL.md` — leverage, DSCR, covenant headroom
-- `treasury-cash-management/SKILL.md` — treasury and liquidity controls
-- `capital-allocation/SKILL.md` — competing uses of capital
-- `capital-structure/SKILL.md` — debt/equity financing structures
-- `valuation/SKILL.md` — DCF, multiples, valuation ranges
-- `investment-analysis/SKILL.md` — investment underwriting and return analysis
-- `m-and-a-analysis/SKILL.md` — acquisition modeling and transaction economics
-- `quality-of-earnings/SKILL.md` — normalized earnings and QoE
+### Billing, AP, AR & payments
+Use `contract-to-invoice`, `usage-billing-review`, `accounts-payable`, `invoice-aging`, `payment-reconciliation`, `ar-collections`, `ar-dunning`, `purchase-order-management`, `expense-management`, and `stripe-reconciliation`.
 
-### Personal financial advisory & planning support
-- `financial-planning/SKILL.md` — holistic cash-flow/net-worth/goal planning
-- `investment-policy-statement/SKILL.md` — IPS and governance framework
-- `portfolio-reporting/SKILL.md` — portfolio roll-forward, allocation, performance reporting
-- `portfolio-allocation-drift/SKILL.md` — compare exposures with approved IPS/targets
-- `multi-custody-aggregation/SKILL.md` — normalize/reconcile multiple custody sources
-- `wealth-diagnostic-memo/SKILL.md` — HNW/family-office diagnostic memo
-- `insurance-risk-review/SKILL.md` — insurance inventory and exposure review
-- `personal-financial-statement/SKILL.md` — principal/guarantor financial statements
-- `succession-planning-finance/SKILL.md` — ownership succession financial modeling
+### Financial statements, reporting & controller work
+Use `financial-statements`, `variance-analysis`, `board-reporting`, `management-dashboard`, `technical-accounting-research`, `accounting-policy-memo`, `gaap-disclosure-review`, `revenue-recognition`, `lease-accounting-asc842`, `multi-entity`, `intercompany-reconciliation`, `consolidation`, `business-combinations`, `debt-equity-accounting`, `related-party-review`, and `subsequent-events`.
 
-### Family office — core
-- `family-office-reporting/SKILL.md` — consolidated reporting/NAV
-- `private-investment-tracking/SKILL.md` — private/fund investment roll-forwards
-- `capital-calls-distributions/SKILL.md` — commitments, calls, distributions
-- `capital-call-distribution-parser/SKILL.md` — parse notices and controlled payment memo
-- `family-office-liquidity/SKILL.md` — taxes, debt, calls, reserves, cash planning
-- `entity-structure-mapping/SKILL.md` — entity/ownership/tax map
-- `family-council-minutes/SKILL.md` — governance meeting minutes and decision log
-- `philanthropic-planning/SKILL.md` — DAF/foundation/giving administration
-- `estate-trust-coordination/SKILL.md` — trust/estate financial administration
+### FP&A, CFO & corporate finance
+Use `strategic-finance`, `budgeting`, `financial-forecasting`, `scenario-planning`, `cash-flow-forecast`, `working-capital`, `profitability-analysis`, `client-profitability`, `revenue-concentration`, `runway-analysis`, `debt-covenant-analysis`, `treasury-cash-management`, `capital-allocation`, `capital-structure`, `valuation`, `investment-analysis`, `m-and-a-analysis`, `quality-of-earnings`, `sources-and-uses`, and acquisition/post-close playbooks.
 
-### Tax & CPA tax work
-Use the bundled tax playbooks including `tax-prep`, `tax-workpapers`, `tax-return-review`, `individual-tax-1040`, `partnership-tax-1065`, `s-corp-tax-1120s`, `c-corp-tax-1120`, `contractor-1099`, `basis-k1-tracking`, `estimated-tax-planning`, `entity-tax-analysis`, `state-local-tax`, `sales-tax-nexus`, `payroll-tax`, `tax-provision`, `tax-notice-response`, and `openaccountants-tax-lookup`.
+### Family office, private investments & planning
+Use `family-office-reporting`, `family-office-pe-investment-accounting`, `private-investment-tracking`, `fund-investment-rollforward`, `capital-calls-distributions`, `capital-call-distribution-parser`, `capital-account-tracking`, `investment-basis-tracking`, `k1-investment-reconciliation`, `unfunded-commitment-tracking`, `investment-performance-irr-moic`, `family-office-liquidity`, `family-office-cash-forecasting`, `family-office-consolidation`, `entity-structure-mapping`, `partnership-waterfalls`, `preferred-return-waterfalls`, `carried-interest-analysis`, `portfolio-company-reporting`, `family-council-minutes`, `philanthropic-planning`, `estate-trust-coordination`, `trust-accounting`, `trust-distribution-tracking`, `estate-administration-accounting`, `beneficiary-reporting`, `gift-estate-tax-readiness`, `financial-planning`, `investment-policy-statement`, `portfolio-reporting`, `portfolio-allocation-drift`, `multi-custody-aggregation`, `wealth-diagnostic-memo`, `insurance-risk-review`, `personal-financial-statement`, and `succession-planning-finance`.
+
+Keep legal ownership, tax basis, accounting carrying value, manager NAV and estimated market value distinct.
+
+### Tax / CPA tax support
+Use `tax-prep`, `tax-workpapers`, `tax-return-review`, `individual-tax-1040`, `partnership-tax-1065`, `s-corp-tax-1120s`, `c-corp-tax-1120`, `contractor-1099`, `basis-k1-tracking`, `estimated-tax-planning`, `entity-tax-analysis`, `state-local-tax`, `sales-tax-nexus`, `payroll-tax`, `tax-provision`, `tax-notice-response`, and `openaccountants-tax-lookup`.
+
+For material tax conclusions, verify the current tax-year/jurisdiction authority. Software acceptance is not authority. Do not file or make elections without authorization.
 
 ### Audit, assurance & controls
-Use `audit-planning`, `audit-risk-assessment`, `audit-support`, `substantive-testing`, `analytical-procedures`, `audit-sampling`, `fraud-risk`, `going-concern`, and `sox-testing` as applicable.
+Use `audit-planning`, `audit-risk-assessment`, `audit-support`, `substantive-testing`, `analytical-procedures`, `audit-sampling`, `fraud-risk`, `going-concern`, `sox-testing`, and `compilation-review-prep`.
 
-## Industry-specific router
-Read `INDUSTRIES.md` whenever the request involves a family office/private investment, manufacturer, field-service or construction company, medical/plastic-surgery practice, or acquisition/portfolio company. Combine the industry playbooks with the generic accounting workflow rather than replacing core accounting controls.
+These workflows support preparation/testing/review; they do not turn the agent into an independent auditor or allow it to issue an audit opinion.
 
-### Family office / private equity / trusts & estates
-Use `family-office-pe-investment-accounting`, `fund-investment-rollforward`, `capital-account-tracking`, `partnership-waterfalls`, `preferred-return-waterfalls`, `carried-interest-analysis`, `investment-basis-tracking`, `k1-investment-reconciliation`, `unfunded-commitment-tracking`, `investment-performance-irr-moic`, `portfolio-company-reporting`, `family-office-consolidation`, `family-office-cash-forecasting`, `trust-accounting`, `trust-distribution-tracking`, `estate-administration-accounting`, `beneficiary-reporting`, and `gift-estate-tax-readiness`.
+## Industry router
+
+Read `INDUSTRIES.md` when the request involves a family office/private investment, manufacturer, blue-collar service/construction company, plastic-surgery/medical practice, or acquisition/portfolio company. Industry skills add operating logic but inherit the core quality standard.
 
 ### Manufacturing
 Use `manufacturing-cost-accounting`, `standard-costing`, `actual-vs-standard-cost`, `purchase-price-variance`, `material-usage-variance`, `labor-efficiency-variance`, `overhead-absorption`, `bom-costing`, `work-order-costing`, `wip-reconciliation`, `finished-goods-reconciliation`, `inventory-reserve-obsolescence`, `scrap-yield-analysis`, `capacity-utilization`, `machine-hour-costing`, `make-vs-buy`, `product-sku-profitability`, `landed-cost`, and `cycle-count-inventory-controls`.
@@ -129,40 +59,25 @@ Use `manufacturing-cost-accounting`, `standard-costing`, `actual-vs-standard-cos
 ### Blue-collar service / construction
 Use `job-profitability`, `service-line-profitability`, `technician-profitability`, `labor-utilization`, `labor-burden`, `construction-job-costing`, `construction-wip-accounting`, `contract-assets-liabilities`, `backlog-analysis`, `service-agreement-recurring-revenue`, `fleet-truck-costing`, `truck-stock-inventory`, `dispatch-kpi-analysis`, `callback-warranty-costing`, `customer-acquisition-payback`, `branch-location-profitability`, `overtime-analysis`, `field-service-cash-conversion`, and `13-week-cash-flow-service-company`.
 
-### Plastic surgery / medical / aesthetic practice
-Use `medical-practice-accounting`, `procedure-profitability`, `provider-productivity`, `provider-compensation`, `patient-deposit-deferred-revenue`, `merchant-financing-reconciliation-medical`, `refund-credit-balance-review`, `medical-supply-implant-inventory`, `operating-room-profitability`, `medical-marketing-roi`, `payor-selfpay-mix-analysis`, and `practice-cash-flow-forecast`.
+### Plastic surgery / medical
+Use `medical-practice-accounting`, `procedure-profitability`, `provider-productivity`, `provider-compensation`, `patient-deposit-deferred-revenue`, `merchant-financing-reconciliation-medical`, `refund-credit-balance-review`, `medical-supply-implant-inventory`, `operating-room-profitability`, `medical-marketing-roi`, `payor-selfpay-mix-analysis`, and `practice-cash-flow-forecast`. Financial productivity metrics are not clinical-quality judgments.
 
-### Acquisitions / post-close
+### Acquisition / post-close
 Use `purchase-price-allocation`, `opening-balance-sheet`, `working-capital-true-up`, `seller-note-accounting`, `earnout-accounting`, `transaction-cost-accounting`, `goodwill-intangibles`, `post-close-integration`, `100-day-finance-plan`, `acquisition-synergy-tracking`, `sources-and-uses`, and `rollover-equity`.
 
-### Systems & integrations
-- `quickbooks-online/SKILL.md`
-- `stripe-reconciliation/SKILL.md`
-- `xero-integration/SKILL.md`
-- `INTEGRATIONS.md` — optional OpenAccountants, Ledger MCP, Odoo MCP, Plaid/custody, and brokerage connections; use only when actually configured
+## Systems & integrations
+Use `quickbooks-online`, `xero-integration`, `stripe-reconciliation`, and `INTEGRATIONS.md`. Never claim an external integration is connected or a write succeeded unless the actual system confirms it.
 
-## Standard professional output
-When applicable provide:
-1. What the records/facts show.
-2. Issues, exceptions, and missing evidence.
-3. Analysis and assumptions.
-4. Recommended treatment or decision options.
-5. Journal entries, schedules, or calculations.
-6. Financial-statement, cash, tax, ownership, portfolio, operating-KPI, or covenant impact.
-7. Required professional review or authoritative-source check.
-8. Next actions, owners, and deadlines.
-
-## Guardrails
-- Do not invent tax rates, filing requirements, GAAP conclusions, legal rights, valuations, investment returns, audit opinions, or live integration results.
+## Master guardrails
+- Preserve legal entity, trust, fund and owner boundaries.
+- Preserve historical actuals and source records.
+- Do not invent tax rules, GAAP conclusions, legal rights, valuations, audit opinions or investment returns.
 - Do not treat intercompany cash movement as proof of accounting substance.
-- Do not net unrelated assets and liabilities without an established basis.
-- Do not describe an estimated valuation as an appraisal or fairness opinion.
-- Do not describe audit-support work as an independent audit opinion.
-- Do not characterize family-office economic consolidation as changing legal ownership.
-- Do not treat a capital-call notice or invoice as independent verification of new or changed wire instructions.
-- Do not use financial productivity metrics as clinical-quality judgments or as the sole basis for employment decisions.
-- Financial-advisory workflows may support planning, reporting, underwriting, scenario analysis, and comparison with an approved IPS, but should not present guaranteed returns or unqualified individualized securities recommendations.
-- Tax, legal, audit, estate/trust, insurance, and consequential technical-accounting conclusions should identify the qualified-professional review point.
+- Do not net unrelated assets/liabilities without an established basis.
+- Do not describe an estimate as an appraisal/fairness opinion.
+- Do not treat a capital-call notice or invoice as independent verification of changed wire instructions.
+- Do not present guaranteed returns or unqualified individualized securities recommendations.
+- Tax, legal, audit, trust/estate, insurance and consequential technical-accounting conclusions should identify qualified-professional review points.
 
-## Final quality check
-Confirm entity and period; debits equal credits; roll-forwards work; cash/subledger balances tie or exceptions are listed; intercompany entries mirror; assumptions are labeled; source documents are identified; material risks are visible; integration access is verified before use; industry-specific KPIs reconcile to financial data where possible; and recommendations are operationally clear.
+## Final quality gate
+Before completion confirm relevant tie-outs pass or exceptions are quantified; facts/assumptions/judgments are labeled; source documents and data dates are visible; material risks are surfaced; authority is current where required; approvals are respected; and another reviewer could reproduce the result.

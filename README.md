@@ -1,68 +1,63 @@
-# Lovable Accounting, CPA, Tax, Audit, Family Office & Financial Advisory Skill
+# Lovable Accounting, CPA, Family Office & CFO Skill Library
 
-A Lovable-compatible **single master skill** with a broad professional-finance playbook library.
+A professional-finance skill library for Lovable covering bookkeeping, accounting close, controller/CPA review, FP&A/CFO work, tax readiness and review, audit support, family-office/private-investment administration, acquisitions, and industry-specific accounting.
 
-## Import into Lovable
+## Lovable import
 
-Use:
+Use the repository root:
 
 `https://github.com/PDHutch303/lovable-anthropic-finance-skills`
 
-Lovable imports one skill per GitHub repository. The root `SKILL.md` is the master skill named `accounting-cfo`; the specialized `SKILL.md` files are bundled playbooks routed by the master skill.
+The root skill is `accounting-cfo`. Bundled specialist playbooks support the master router.
+
+## Quality architecture
+
+This repository intentionally separates **breadth** from **control quality**:
+
+- `SKILL.md` routes finance work.
+- `QUALITY-STANDARD.md` defines provenance, scope, tie-outs, exceptions, materiality, approval boundaries, current-authority requirements and review-ready output.
+- `EVALS.md` provides adversarial scenarios and a scoring rubric so skill quality can be tested against a no-skill baseline.
+- High-consequence core workflows such as bank reconciliation, close, controller review, tax-return review, technical accounting, manufacturing cost accounting, family-office reporting/private investments and QoE contain deeper procedures and quality gates.
+- Smaller specialty skills add domain logic and inherit the master quality standard.
 
 ## Coverage
 
-### Bookkeeping & onboarding
-Client onboarding intake, client context profiling, bookkeeping setup, chart of accounts, structured receipt/invoice extraction, uncategorized-transaction chasing, bank/credit-card reconciliation, transaction coding, receipt processing, cleanup/catch-up, accruals/prepaids, close management, journal entries, account reconciliation, fixed assets, inventory/COGS, and payroll reconciliation.
+### Bookkeeping & close
+Onboarding, COA, receipt/invoice extraction, categorization, bank and balance-sheet reconciliation, journal entries, payroll, fixed assets, inventory/COGS, cleanup/catch-up, close management and controller review.
 
-### Billing, AP, AR & spend
-Contract-to-invoice review, usage-billing QA, accounts payable, invoice aging, payment reconciliation, collections/dunning, purchase orders, employee/card expense management, and Stripe reconciliation.
+### AP / AR / billing
+AP, purchasing, invoice aging, payments, collections/dunning, contract-to-invoice, usage billing, expense management and processor reconciliation.
 
-### CPA, controller & accounting
-Controller review, financial statements, variance analysis, management dashboards, board reporting, technical-accounting research, accounting policies, GAAP disclosure review, compilation/review preparation, related parties, subsequent events, revenue recognition, ASC 842, debt/equity accounting, business combinations, multi-entity accounting, intercompany, and consolidation.
+### Controller / CPA / reporting
+Financial statements, variance analysis, board reporting, dashboards, multi-entity/intercompany/consolidation, revenue, leases, related parties, technical accounting, accounting policies and disclosures.
 
-### FP&A, corporate finance & financial advisory analysis
-Strategic finance, budgeting, forecasting, scenario planning, cash-flow forecasting, working capital, profitability, client economics, concentration, runway, debt/covenants, treasury, capital allocation, capital structure, valuation, investment underwriting, M&A, and quality of earnings.
+### FP&A / CFO / transactions
+Budgeting, rolling forecasts, 13-week and longer cash forecasts, working capital, profitability, concentration, debt/covenants, treasury, valuation, capital allocation/structure, M&A, QoE and post-close analysis.
 
-### Personal financial planning support
-Holistic financial planning, investment-policy statements, portfolio reporting, portfolio-allocation drift, multi-custody aggregation, wealth diagnostic memos, insurance-risk review, personal financial statements, and succession-planning finance.
+### Family office / private equity / planning
+Entity maps, consolidated family-office reporting, private investment roll-forwards, capital calls/distributions, basis/K-1 reconciliation, unfunded commitments, IRR/MOIC and fund metrics, waterfalls/carry, liquidity, trusts/estates, philanthropy, portfolio reporting, wealth diagnostics and succession planning support.
 
-### Family office
-Consolidated family-office reporting/NAV, private-investment tracking, capital calls/distributions, capital-call/distribution notice parsing with wire-verification controls, liquidity planning, entity/ownership mapping, family-council minutes/decision logs, philanthropic/DAF administration, and estate/trust financial coordination.
+### Tax / audit support
+Tax workpapers, return review, entity/individual return readiness, estimated tax, SALT/sales tax, payroll tax, provision/notice support, audit planning/testing/analytics, fraud/going-concern/SOX support. Material positions require current authoritative guidance and qualified professional review.
 
-### Tax
-Tax-prep readiness, tax workpapers, draft-return review, Form 1040 support, Form 1065 support, Form 1120-S support, Form 1120 support, contractor/1099 readiness, basis/K-1 tracking, estimated-tax planning support, entity-tax analysis, state/local tax readiness, sales-tax nexus support, payroll tax, tax provision, tax-notice response support, and an `openaccountants-tax-lookup` workflow for use when the OpenAccountants MCP is actually configured.
+### Industry packs
+Family office/private equity/trusts, manufacturing, blue-collar service/construction, plastic surgery/medical/aesthetic practices, and acquisitions/post-close integration. See `INDUSTRIES.md`.
 
-### Audit, assurance & controls
-Audit planning, risk assessment, PBC/evidence support, substantive testing, analytical procedures, sampling, fraud-risk review, going-concern support, and SOX/internal-control testing.
+## Best-of-breed benchmark sources
 
-### Systems & integrations
-QuickBooks Online, Xero, and Stripe workflows. `INTEGRATIONS.md` documents optional OpenAccountants, Ledger MCP, Odoo Accounting MCP, Plaid/custody, and brokerage integrations. These external systems must be connected separately; the skill never assumes live access.
+The workflows are original/adapted compact procedures informed by strong public finance-agent and accounting resources, including:
 
-## Design principles
+- Anthropic Knowledge Work Plugins — finance workflows
+- Anthropic Financial Services / Financial Services Plugins — financial analysis, private equity, wealth management and fund administration
+- Receiptor-AI bookkeeping skills
+- OpenAccountant skills
+- OpenAccountants tax/accounting resources
+- Xero official prompt library
+- Stripe AI resources
+- CaseMark skills
 
-The repository is intentionally compact enough for Lovable import. The master skill distinguishes facts from assumptions, preserves legal-entity and trust boundaries, requires reconciled support, and surfaces professional-review points for consequential tax, legal, audit, estate/trust, insurance, investment, and technical-accounting matters.
+This repository does not copy large upstream skill files verbatim. The goal is a Lovable-oriented operating system that emphasizes evidence, reproducibility, controls and review.
 
-Financial-planning and investment playbooks are designed for planning, reporting, underwriting, IPS frameworks, and scenario analysis—not individualized securities recommendations or guaranteed returns.
+## Design rule
 
-## Source inspiration / attribution
-
-The compact playbooks were curated and adapted from concepts and workflows found in public repositories reviewed for this project, including:
-
-- `https://github.com/anthropics/knowledge-work-plugins`
-- `https://github.com/Receiptor-AI/bookkeeping-skills`
-- `https://github.com/openaccountant/skills`
-- `https://github.com/harshith-vaddiparthy/finance-skills`
-- `https://github.com/wyre-technology/msp-claude-plugins`
-- `https://github.com/XeroAPI/xero-prompt-library`
-- `https://github.com/stripe/ai`
-- `https://github.com/openaccountants/openaccountants`
-- `https://github.com/CaseMark/skills`
-- `https://github.com/aviskaar/open-org`
-
-Additional integration candidates documented in `INTEGRATIONS.md` include:
-
-- `https://github.com/minhyeoky/mcp-server-ledger`
-- `https://github.com/jeevanism/odoo-accounting-mcp`
-
-These files are compact Lovable-oriented adaptations rather than mirrors of the upstream repositories.
+More skills are not automatically better. Add or deepen a skill when it changes behavior materially, clarifies a trigger, adds domain-specific controls, or improves a recurring deliverable. Prefer evidence-tested workflows over a directory of shallow prompts.
