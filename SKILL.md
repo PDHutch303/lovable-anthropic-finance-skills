@@ -42,11 +42,14 @@ Use the bundled playbook that best matches the request:
 - `payment-reconciliation/SKILL.md` — cash receipt/payment matching
 - `ar-collections/SKILL.md` — collection workflow and follow-up
 - `ar-dunning/SKILL.md` — structured customer dunning and escalation
+- `purchase-order-management/SKILL.md` — PO approvals, matching, commitments, and accruals
+- `expense-management/SKILL.md` — employee/card spend controls, coding, and approvals
 
 ### Financial reporting & controller
 - `financial-statements/SKILL.md` — P&L, balance sheet, and cash flow reporting
 - `variance-analysis/SKILL.md` — budget/actual and period-over-period analysis
 - `board-reporting/SKILL.md` — board and management reporting packages
+- `management-dashboard/SKILL.md` — recurring KPI scorecards and operating reviews
 - `multi-entity-accounting/SKILL.md` — accounting across multiple legal entities
 - `intercompany-reconciliation/SKILL.md` — intercompany matching and due-to/due-from
 - `consolidation/SKILL.md` — consolidated reporting and eliminations
@@ -60,6 +63,10 @@ Use the bundled playbook that best matches the request:
 - `financial-forecasting/SKILL.md` — rolling forecasts and scenario planning
 - `profitability-analysis/SKILL.md` — product, service, location, or segment profitability
 - `client-profitability/SKILL.md` — customer/client economics and pricing
+- `revenue-concentration/SKILL.md` — concentration risk by customer/product/channel/location
+- `runway-analysis/SKILL.md` — burn, liquidity floor, and runway scenarios
+- `debt-covenant-analysis/SKILL.md` — leverage, DSCR, covenant headroom, and refinancing risk
+- `treasury-cash-management/SKILL.md` — cash positioning, transfers, liquidity, and treasury controls
 - `quality-of-earnings/SKILL.md` — QoE and normalized earnings analysis
 
 ### Tax & compliance readiness
